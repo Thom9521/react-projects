@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Lemonade Stand</title>
+  </head>
+  <body background->
+    <div class="container">
+      <h1 class="mb-3">Lemonade Stand</h1>
+      <h5 class="mb-5">
+        Hello and welcome to my lemonade stand <br />A lemonade cost 10 DKK each
+      </h5>
+      <p>Do you want a lemonade?</p>
+      <button class="btn btn-primary" onClick="store.dispatch(drink())">
+        Drink lemonade
+      </button>
+      <button class="btn btn-danger" onClick="store.dispatch(no())">
+        No thanks
+      </button>
+      <p id="noThanks"></p>
+
+      <p class="mt-5">
+        You currently need to pay: <span id="value">0</span> DKK
+      </p>
+      <button class="btn btn-primary" onClick="store.dispatch(pay())">
+        Pay
+      </button>
+      <button class="btn btn-danger" onClick="store.dispatch(run())">
+        RUN!
+      </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
