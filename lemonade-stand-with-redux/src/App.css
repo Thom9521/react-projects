@@ -10,3 +10,105 @@ span {
   font-weight: bold;
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 700px) {
+  .navbar-nav {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
+  .headerNews {
+    margin-top: 1rem;
+  }
+  .linkStyles .fontAwesomeStyles {
+    font-size: 3rem !important;
+    margin-left: 1.5rem;
+  }
+}
+.headerStyles {
+  border-bottom: 1px #222222 solid !important;
+  box-shadow: 0 2px 5px #222222 !important;
+}
+
+.fontAwesomeStyles {
+  font-size: 2.3rem !important;
+  margin-left: 1rem;
+}
+.iconImg {
+  width: 2rem;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.headerItem {
+  margin: 1rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.headerNews {
+  font-size: 1rem !important;
+  color: white !important;
+  background-color: rgb(34, 34, 34) !important;
+  /* background-color: rgb(85, 85, 85) !important; */
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 10px, 10px !important;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.headerNews:hover {
+  background-color: #914405 !important;
+}
+.modalBody {
+  font-size: 0.9rem;
+  color: black !important;
+}
+.modalHeader {
+  background-color: #ca5010;
+  font-size: 3rem;
+}
+.newsImg {
+  width: 10rem;
+}
+.contentWrapper {
+  padding-top: 1rem;
+}
+
+.lightBlackBg {
+  background-color: #222222 !important;
+}
+
+.textStyles {
+  color: #7e7b7b !important;
+}
+
+.linkStyles {
+  position: relative;
+  color: #7e7b7b !important;
+}
+.linkStyles .tooltiptext {
+  visibility: hidden;
+  width: 5rem;
+  background-color: #914405;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.linkStyles:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.linkStyles:hover {
+  color: #eeb100 !important;
+  text-decoration: none !important;
+}
